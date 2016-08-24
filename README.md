@@ -53,7 +53,9 @@ Iremos ter 2 formas de erro para o `Create`:
 
 - Não encontrou a entidade a ser criada.
 - Encontrou porém os dados não validaram.
-- 
+
+##### Não encontrou a ENTIDADE
+
 Quando não encontra a entidade a ser criada já sabemos que é: `404`
 
 ![404](https://http.cat/404)
@@ -103,14 +105,32 @@ Eu acredito que esse **conflito** no pedido pode se dar pela não validação de
 
 #### ERRO
 
+##### Não encontrou a ENTIDADE
+
+Quando não encontra a entidade a ser criada já sabemos que é: `404`
+
+![404](https://http.cat/404)
+
 ### Update
 
 #### SUCESSO
 
 #### ERRO
 
+##### Não encontrou a ENTIDADE
+
+Quando não encontra a entidade a ser criada já sabemos que é: `404`
+
+![404](https://http.cat/404)
+
 ### Delete
 
 #### SUCESSO
 
 #### ERRO
+
+##### Não encontrou a ENTIDADE
+
+Quando não encontra a entidade a ser criada já sabemos que é: `404`
+
+![404](https://http.cat/404)
