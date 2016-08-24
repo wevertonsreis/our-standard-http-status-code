@@ -6,6 +6,14 @@ Como não existe muito material sobre esse assunto em pt-BR, vamos criar o nosso
 
 *ps: Lembrando que esse padrão é para ser utilizado em **TODOS** os sistemas web da Webschool.*
 
+## Padrão
+
+### Erros
+
+- Não encontrado: 404
+- Encontrado mas não validou: 422
+
+
 ## CRUD
 
 Iniciamente vamos definir os códigos de retorno para as funções básicas do CRUD.
