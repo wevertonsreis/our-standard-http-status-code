@@ -1,4 +1,4 @@
-# our-standard-http-status-code
+# Our standard http status code
 
 Nosso padrão de resposta de códigos HTTP via API REST.
 
@@ -29,7 +29,25 @@ Por isso agora eu lhe pergunto:
 
 ### SUCESSO
 
+- Código: 201 - Criado
+
 ### ERRO
+
+E quando o erro no backend é de validação, você acha melhor retornar:
+
+a) 403 - Proibido
+b) 406 - Não Aceitável
+c) 409 - Conflito
+d) 412 - Pré-condição falhou
+e) 422 - Entidade improcessável 
+
+> Eu voto no 409.
+
+**EU** voto no 409 pois esse código diz:
+
+> Indica que a solicitação não pôde ser processada por causa do conflito no pedido, como um conflito de edição .
+
+Eu acredito que esse **conflito** no pedido pode se dar pela não validação de seus valores, por isso gera um conflito com o que esperamos, o que acham?
 
 ### Read
 
