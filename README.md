@@ -57,13 +57,13 @@ Função que **CRIA** uma entidade seguindo o padrão:
 - url: /api/entidade
 - method: POST
 
-#### SUCESSO
+#### Create SUCESSO
 
 **Padrão aceito:**
 
 - Código: 201 - Criado
 
-#### ERRO
+#### Create ERRO
 
 Iremos ter 2 formas de erro para o `Create`:
 
@@ -93,7 +93,7 @@ E quando o erro no backend é de validação, você acha melhor retornar:
 Eu acredito que esse **conflito** no pedido pode se dar pela não validação de seus valores, por isso gera um conflito com o que esperamos, o que acham?
 
 
-**Atualização**
+##### Atualização Create ERRO
 
 O [Wendell](https://github.com/WendellAdriel) me chamou a antenção para o `422` e depois eu também li o mesmo aqui [http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api#http-status](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api#http-status):
 
@@ -102,6 +102,8 @@ O [Wendell](https://github.com/WendellAdriel) me chamou a antenção para o `422
 **Padrão sugerido/aceito:**
 
 - Código: 422 - Entidade improcessável 
+
+![422](https://http.cat/422)
 
 ### Read
 
