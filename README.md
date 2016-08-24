@@ -92,9 +92,16 @@ E quando o erro no backend é de validação, você acha melhor retornar:
 
 Eu acredito que esse **conflito** no pedido pode se dar pela não validação de seus valores, por isso gera um conflito com o que esperamos, o que acham?
 
-**Padrão sugerido:**
 
-- Código: 409 - Conflito
+**Atualização**
+
+O [Wendell](https://github.com/WendellAdriel) me chamou a antenção para o `422` e depois eu também li o mesmo aqui [http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api#http-status](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api#http-status):
+
+> 422 Unprocessable Entity - Used for validation errors
+
+**Padrão sugerido/aceito:**
+
+- Código: 422 - Entidade improcessável 
 
 ### Read
 
