@@ -39,11 +39,11 @@ Por isso agora eu lhe pergunto:
 
 E quando o erro no backend é de validação, você acha melhor retornar:
 
-a) 403 - Proibido
-b) 406 - Não Aceitável
-c) 409 - Conflito
-d) 412 - Pré-condição falhou
-e) 422 - Entidade improcessável 
+- a) 403 - Proibido
+- b) 406 - Não Aceitável
+- c) 409 - Conflito
+- d) 412 - Pré-condição falhou
+- e) 422 - Entidade improcessável 
 
 > Eu voto no 409.
 
@@ -62,6 +62,23 @@ Eu acredito que esse **conflito** no pedido pode se dar pela não validação de
 #### SUCESSO
 
 - Retorna 1 lista vazia: 204
+- Retorna 1 lista não vazia: 200
+
+##### retorno vazio
+
+**Padrão sugerido:**
+
+- Código: 204 - No Content
+
+![204](https://http.cat/204)
+
+##### retorno não vazio
+
+**Padrão sugerido:**
+
+- Código: 200 - Ok
+
+![200](https://http.cat/200)
 
 #### ERRO
 
