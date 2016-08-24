@@ -27,11 +27,13 @@ Por isso agora eu lhe pergunto:
 
 ### Create
 
-### SUCESSO
+#### SUCESSO
+
+**Padrão aceito:**
 
 - Código: 201 - Criado
 
-### ERRO
+#### ERRO
 
 E quando o erro no backend é de validação, você acha melhor retornar:
 
@@ -49,22 +51,26 @@ e) 422 - Entidade improcessável
 
 Eu acredito que esse **conflito** no pedido pode se dar pela não validação de seus valores, por isso gera um conflito com o que esperamos, o que acham?
 
+**Padrão sugerido:**
+
+- Código: 409 - Conflito
+
 ### Read
 
-### SUCESSO
+#### SUCESSO
 
 - Retorna 1 lista vazia: 204
 
-### ERRO
+#### ERRO
 
 ### Update
 
-### SUCESSO
+#### SUCESSO
 
-### ERRO
+#### ERRO
 
 ### Delete
 
-### SUCESSO
+#### SUCESSO
 
-### ERRO
+#### ERRO
