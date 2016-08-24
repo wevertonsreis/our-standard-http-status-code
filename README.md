@@ -39,7 +39,23 @@ Porém perceba que **para nós** o `DELETE` irá retornar 1 JSON também, então
 
 Perceba que é **APENAS** o corpo de dados, pois podemos ter outras informações que virão juntamente com o JSON da resposta, logo mais chegaremos nisso.
 
+Além disso sabemos que a resposta sempre será **ou SUCESSO ou ERRO**, porém além disso ela poder ter mais nuances, por exemplo o retorno do **ERRO**, vamos dividir em:
+
+- Não encontrou entidade: 404
+- Encontrou mas não aplicou a ação: 204 ???
+
+Aposto que você percebeu **claramente** que encontrar mas não aplicar a ação não é semanticamente 1 erro da requisição, porém para nós será 1 tipo de erro de sucesso.
+
+Será 1 erro pois poderemos tratar no Frontend diferentemente do que tratamos o retorno com `200`.
+
+> O que acham?
+
 ### Create
+
+Função que **CRIA** uma entidade seguindo o padrão:
+
+- url: /api/entidade
+- method: POST
 
 #### SUCESSO
 
@@ -81,6 +97,24 @@ Eu acredito que esse **conflito** no pedido pode se dar pela não validação de
 - Código: 409 - Conflito
 
 ### Read
+
+Função que **LÊ/BUSCA** entidade(s) seguindo o padrão:
+
+- url: /api/entidade
+- method: GET
+
+- url: /api/entidade/:id
+- method: GET
+
+- url: /api/entidade/campo1/valor1/campo2/valor2
+- method: GET
+
+- url: /api/entidade?id=
+- method: GET
+
+- url: /api/entidade?=campo1=valor1&campo2=valor2
+- method: GET
+
 
 #### SUCESSO
 
