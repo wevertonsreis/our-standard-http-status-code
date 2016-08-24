@@ -27,6 +27,18 @@ Por isso agora eu lhe pergunto:
 
 > Acho que não né? Então pronto!
 
+ps: **Atualizado**
+
+Achei 1 material que diz exatamente isso sobre o 204: [http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api#http-status](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api#http-status)
+
+> 204 - Response to a successful request that won't be returning a body (like a DELETE request)
+
+Porém perceba que **para nós** o `DELETE` irá retornar 1 JSON também, então vamos utilizar esse código como:
+
+> Retornando 1 corpo/body vazio.
+
+Perceba que é **APENAS** o corpo de dados, pois podemos ter outras informações que virão juntamente com o JSON da resposta, logo mais chegaremos nisso.
+
 ### Create
 
 #### SUCESSO
