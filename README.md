@@ -49,6 +49,15 @@ Perceba que é **APENAS** o corpo de dados, pois podemos ter outras informaçõe
 
 #### ERRO
 
+Iremos ter 2 formas de erro para o `Create`:
+
+- Não encontrou a entidade a ser criada.
+- Encontrou porém os dados não validaram.
+- 
+Quando não encontra a entidade a ser criada já sabemos que é: `404`
+
+![404](https://http.cat/404)
+
 E quando o erro no backend é de validação, você acha melhor retornar:
 
 - a) 403 - Proibido
