@@ -113,6 +113,17 @@ Quando não encontra a entidade a ser criada já sabemos que é: `404`
 
 ### Update
 
+No `Update` teremos as seguintes situações:
+
+- Não encontra a entidade para alterar: 404
+- Encontra porém não valida os dados: 409
+- Encontra e altera a entidade, retornando a entidade modificada: 200
+- Encontra e não altera a entidade, retornando a entidade antiga: 204
+
+> Mas por que retornar `204` quando a alteração não modifica em nada a entidade?
+
+**IMHO**, acredito que sabermos se algum valor foi realmente alterado no backend ou a entidade não precisou modificar nada é de suma importância para o Frontend. Pois se devolvermos apenas `200` nos 2 casos o desenvolvedor acreditará que modificou algo mesmo se esse não precisasse, logo se o Frontend receber um `204` ele saberá que não adiantará enviar os mesmos dados pois a entidade no backend já está com aquela conformação dos dados/valores.
+
 #### SUCESSO
 
 #### ERRO
